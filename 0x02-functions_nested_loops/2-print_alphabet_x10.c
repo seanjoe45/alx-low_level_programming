@@ -7,11 +7,12 @@
  */
 void print_alphabet_x10(void)
 {
-	int joel, b;
+	int joel;
+	int b;
 
-	for (joel = 0, joel <= 9; Joel++)
+	for (joel = '0', joel <= '9'; paul++)
 	{
-		for (b = 97; b <= 122; b++)
+		for (b = '97'; b <= '122'; b++)
 		{
 			_putchar(b);
 		}
