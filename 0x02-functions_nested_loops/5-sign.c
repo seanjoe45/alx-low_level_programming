@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * prints_sign - determines if the input number is >,
- * = or < than 0
+ * prints_sign - determines if the input number is greater,
+ * equal or less than zero.
  *
- * @n: the input number as interger.
+ * @n: The input number as interger.
  *
- * Return: 1 if it is greater than zero,  is zero0, -1 is less than 0.
+ * Return: Always 0.
  */
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar(43);
+		_putchar('+');
 		return (1);
 	}
 	else if (n < 0)
 	{
-		_putchar(45);
+		_putchar('-');
 		return (-1);
 	}
 	else
 	{
-		_putchar(48);
+		_putchar('0');
 		return (0);
 	}
 	_putchar('\n');
