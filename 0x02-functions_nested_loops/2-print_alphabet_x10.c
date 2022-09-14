@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 	int joel;
 	int b;
 
-	for (joel = '0', joel <= '9'; paul++)
+	for (joel = '0'; joel <= '9'; joel++)
 	{
 		for (b = '97'; b <= '122'; b++)
 		{
