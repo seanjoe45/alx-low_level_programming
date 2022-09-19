@@ -13,7 +13,7 @@ char *_strcpy(char *dest, char *src)
 	int i;
 
 	n = string_length(src);
-	for (i = 0; i < n && src[i] != '\n'; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
@@ -25,10 +25,10 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * string_length - finds the length of a string.
- * Return: length of c.
- * @pointer: pointer.
- */
+  * string_length - finds the length of a string.
+  * Return: length of c.
+  * @pointer: pointer.
+  */
 int string_length(char *pointer)
 {
 	int c = 0;
