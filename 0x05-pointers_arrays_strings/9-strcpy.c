@@ -25,10 +25,10 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * string_length - finds the length of a string.
- * Return: length of c.
- * @pointer: pointer.
- */
+  * string_length - finds the length of a string.
+  * Return: length of c.
+  * @pointer: pointer.
+  */
 int string_length(char *pointer)
 {
 	int c = 0;
