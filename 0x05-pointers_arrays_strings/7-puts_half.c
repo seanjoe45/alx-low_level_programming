@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
  * puts_half - print half of a string.
  * @str: character
  */
-voids puts_half(char *str)
+void puts_half(char *str)
 {
 	int m, n, i, j;
 
@@ -27,17 +26,19 @@ voids puts_half(char *str)
 	}
 	_putchar('\n');
 }
+
 /**
- * string_length - finds the length of a string.
- * Return: length of c.
- * @pointer: pointer.
- */
+  * string_length - finds the length of a string.
+  * Return: length of c.
+  * @pointer: pointer.
+  */
 int string_length(char *pointer)
 {
 	int c = 0;
-		while(*(pointer + c) != '\0')
-		{
-			c++;
-		}
-		return (c);
+
+	while (*(pointer + c) != '\0')
+	{
+		c++;
 	}
+	return (c);
+}
