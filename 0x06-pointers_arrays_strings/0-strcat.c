@@ -5,12 +5,11 @@
  *
  * @dest: string 1
  * @src: string 2
- * Return: char pointer
+ * Return: the pointer to the dest.
  */
 char *_strcat(char *dest, char *src)
 {
 	int i = 0, j = 0;
-	char *p;
 
 	while (*(dest + i) != '\0')
 	{
@@ -19,10 +18,10 @@ char *_strcat(char *dest, char *src)
 	while (*(src + j) != '\0')
 	{
 		*(dest + i) = *(src + j);
+		if (*(src + count2) == '\0')
+		break;
 		i++;
 		j++;
 	}
-	*(dest + i) = '\0';
-	p = dest;
-	return (p);
+	return (dest);
 }
