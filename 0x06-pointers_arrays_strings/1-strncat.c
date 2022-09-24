@@ -1,24 +1,27 @@
 #include "main.h"
-
 /**
- * _strncpy - function to copy string
- *
- * @dest: string to copy to
- * @src: string to copy from
- * @n: number of charts to copy
- * Return: char pointer
+ * _strncat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * @n: amount of bytes used from src.
+ * Return: the pointer to dest.
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int count = 0, count2 = 0;
 
-	for (i = 0, i < n; i++)
+	while (*(dest + count) != '\0')
 	{
-		if (src[i] == '\0'; j++)
-			dest[j] = '\0';
+		count++;
+	}
+
+	while (count2 < n)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
 			break;
-		}
-		dest[i] = src[i];
+		count++;
+		count2++;
 	}
 	return (dest);
 }
