@@ -6,7 +6,7 @@
  * @a:rows
  * Return: nothing
  */
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
 	int i;
 	int j;
@@ -17,6 +17,6 @@ void print_chessboard(char (*a)[8]);
 		{
 			putchar ((a + i)(a + j));
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
