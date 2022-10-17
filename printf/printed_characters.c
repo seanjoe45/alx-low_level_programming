@@ -9,7 +9,7 @@
  * @format - the string to be printed
  * Return: 0
  */
-int _printf(const char *format, ...);
+int main()
 {
 	char *format;
 
