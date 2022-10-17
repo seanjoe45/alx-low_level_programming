@@ -7,13 +7,13 @@
  * @s - the character string
  * @d - the integers to be returned
  * @format - the string to be printed
- * Return: returns the number of characters printed.
+ * Return: 0
  */
 int _printf(const char *format, ...);
 {
-	char *str = "format";
+	char *format;
 
-	printf("%d\n", strlen(str));
+	printf("%d\n", strlen(format));
 
 	return (0);
 }
