@@ -11,7 +11,7 @@
  */
 int _printf(const char *format, ...);
 {
-	char *str = "format";
+	char *str;
 
 	printf("%d\n", strlen(str));
 
