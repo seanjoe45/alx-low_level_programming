@@ -9,9 +9,9 @@
  * @format - the string to be printed
  * Return: returns the number of characters printed.
  */
-int _printf(const char *format, ...);
+int _printf(const char *format, ...)
 {
-	int *str;
+	char *str
 
 	printf("%d\n", strlen(str));
 
