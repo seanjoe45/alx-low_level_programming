@@ -11,7 +11,7 @@
  */
 int main()
 {
-	char *str
+	char *str = "format";
 
 	printf("%d\n", strlen(str));
 
