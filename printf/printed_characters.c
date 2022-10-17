@@ -9,7 +9,7 @@
  * @format - the string to be printed
  * Return: returns the number of characters printed.
  */
-int _printf(const char *format, ...)
+int main()
 {
 	char *str
 
