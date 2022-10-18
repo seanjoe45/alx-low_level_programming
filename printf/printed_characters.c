@@ -3,6 +3,7 @@
 #include <string.h>
 
 /**
+ * _printf - produces output according to a format
  * Description: this function will call the get_print function that will determine the printing function to call depending on conversion
  * @s - the character string
  * @d - n: length of the formatted output string
