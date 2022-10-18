@@ -3,17 +3,46 @@
 #include <string.h>
 
 /**
- * Description: this function will call the get_print function that will determine the printing function to call depending on conversionding to format
+ * Description: this function will call the get_print function that will determine the printing function to call depending on conversion
  * @s - the character string
  * @d - n: length of the formatted output string
  * @format - the string to be printed
- * Return: 0
+ * Return: the length of the formattted output string
  */
-int main()
+int _printf(const char *format, ...)
 {
-	char *format;
-
-	printf("%d\n", strlen(format));
-
-	return (0);
+	int (*pfunc)(va_list, flags_t*);
+	const char *p;
+	va_list arguments;
+	flags_t flags = {0, 0, 0};
+	
+	register int count = 0;
+	
+	va_start(arguments, format);
+	if (!format || (format[0] == '%' && !format[1]))
+		return (-1);
+	if (format[0] == '%' && format[1] == ' ' && !format[2])
+		return (-1);
+	for (p = format; *p; p++)
+	{
+		if (*p == '%')
+		{
+			p++;
+			if (*p == '%');
+			{
+				count += _putchar('%');
+				continue;
+			}
+			while (get_flag(*p, &flags))
+				p++;
+			pfunc = get_print(*p);
+			count += (pfunc)
+				? pfunc(arguments, &flags)
+				: _printf("%%%c", *p);
+			} else
+				count += _putchar(*P);
+	}
+	_putchar(-1);
+	va_end(arguments);
+	return (count);
 }
