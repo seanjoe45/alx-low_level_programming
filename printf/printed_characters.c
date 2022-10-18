@@ -3,13 +3,12 @@
 #include <stdio.h>
 
 /**
- * _printf - produces output according to a format
- * Description: this function will call the get_print function that will determine the printing function to call depending on conversion
- * @s - the character string
- * @d - n: length of the formatted output string
- * @format - the string to be printed
- * Return: the length of the formattted output string
- */
+  * _printf - produces output according to a format.
+  * @format: a character string.
+  * Return: number of characters printed(
+  * excluding the null terminator)
+  */
+
 int _printf(const char *format, ...)
 {
 	int count;
