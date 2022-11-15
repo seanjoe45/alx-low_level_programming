@@ -2,8 +2,8 @@
 
 /**
  * _isupper - checks if parameter is an uppercase character.
- * @c: input characteer.
- * Return: 1 if is am uppercase character, 0 in other case.
+ * @c: input character.
+ * Return: 1 if is an uppercase character, 0 in other case.
  */
 int _isupper(int c)
 {
