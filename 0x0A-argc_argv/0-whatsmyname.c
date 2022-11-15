@@ -2,7 +2,7 @@
 /**
  * main - prints its name, follpwed by a new line.
  * @argc: number of command line arguments.
- * @argv: array that containsthe program command line arguments.
+ * @argv: array that contains the program command line arguments.
  * Return: 0 - success.
  */
 int main(int argc __attribute__((used)), char *argv[])
